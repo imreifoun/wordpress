@@ -67,3 +67,65 @@ myplugin/
 ├── assets/
 │   ├── js/
 │   └── css/
+
+Common plugin components:
+
+    - Hooks (add_action, add_filter)
+
+    - Custom post types
+
+    - Shortcodes
+
+    - Admin pages
+
+    - AJAX handlers
+
+    - REST API endpoints
+
+_____________________________________________________________________
+
+🧭 6. Configuration Files
+
+| File                     | Description                                     |
+| ------------------------ | ----------------------------------------------- |
+| **`wp-config.php`**      | Connects to DB and defines settings             |
+| **`.htaccess`**          | URL rewriting (for permalinks)                  |
+| **`robots.txt`**         | SEO crawling rules                              |
+| **`php.ini` (optional)** | Adjust PHP settings (upload size, memory, etc.) |
+
+🧰 7. Optional Enhancements
+
+| Category            | Example Components                                        |
+| ------------------- | --------------------------------------------------------- |
+| **Security**        | Wordfence, iThemes Security, custom `wp-config` hardening |
+| **Caching**         | WP Super Cache, W3 Total Cache, or server-level caching   |
+| **SEO**             | Yoast SEO or Rank Math                                    |
+| **Backup**          | UpdraftPlus or manual database dump                       |
+| **Performance**     | CDN (Cloudflare), image compression (Smush, Imagify)      |
+| **Analytics**       | Google Site Kit or self-hosted tracking                   |
+| **Spam Protection** | Akismet, reCAPTCHA                                        |
+| **Email SMTP**      | Post SMTP (OAuth2 ready)                                  |
+
+🔌 8. Developer Tools
+
+| Tool                  | Purpose                                         |
+| --------------------- | ----------------------------------------------- |
+| **WP-CLI**            | Manage WordPress via terminal                   |
+| **Composer**          | Manage PHP dependencies (for advanced builds)   |
+| **Node.js**           | For theme asset bundling (SASS, Tailwind, etc.) |
+| **Git**               | Version control                                 |
+| **Local WP / Docker** | Local testing and development                   |
+
+
+🧱 9. Database Tables (Created Automatically)
+
+| Table                                                   | Purpose                                               |
+| ------------------------------------------------------- | ----------------------------------------------------- |
+| `wp_posts`                                              | All content (pages, posts, attachments, custom types) |
+| `wp_postmeta`                                           | Metadata for posts                                    |
+| `wp_users`                                              | User data                                             |
+| `wp_usermeta`                                           | User metadata                                         |
+| `wp_options`                                            | Global settings                                       |
+| `wp_terms`, `wp_term_taxonomy`, `wp_term_relationships` | Categories/tags                                       |
+| `wp_comments`, `wp_commentmeta`                         | Comments                                              |
+| `wp_links`                                              | (Old system, rarely used)                             |
